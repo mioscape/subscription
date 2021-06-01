@@ -1,2 +1,2 @@
 trojan-go://16b68040-c2a7-11eb-9a56-1239d0255272@bimbel.ruangguru.com:443/?sni=trojan4.bonds.id&type=ws&host=trojan4.bonds.id&path=%2Fhowdy&encryption=none#subscription.mioscape.cf%20%231
-trojan-go://94540070-c03e-11eb-a116-1239d0255272@www.ruangguru.com:443/?sni=trojan4.bonds.id&type=ws&host=trojan4.bonds.id&path=%2Fhowdy&encryption=none#raffa
+trojan-go://94540070-c03e-11eb-a116-1239d0255272@www.ruangguru.com:443/?sni=trojan4.bonds.id&type=ws&host=trojan4.bonds.id&path=%2Fhowdy&encryption=none#subscription.mioscape.cf%20%232
