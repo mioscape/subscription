@@ -1,0 +1,75 @@
+port: 8080
+socks-port: 1080
+allow-lan: true
+log-level: warning
+Mode: rule
+external-controller: 127.0.0.1:9090
+proxies:
+  - {name: 🇸🇬 SG 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 420e69e7-bf7b-4a2e-d156-f135a9d1cc44, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg1-sshagan.v2-ray.cf}}
+  - {name: 🇸🇬 SG 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: c9dfd5b4-7479-4662-af64-6e16de84bd2c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg2-sshagan.v2-ray.cf}}
+  - {name: 🇸🇬 SG 3, server: www.ruangguru.com, port: 80, type: vmess, uuid: 1c690b5b-5ac6-4448-bc99-c6cd3a3cb7bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: sg-sshkit.v2-ray.cf}}
+  - {name: 🇺🇲 US 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 63c1466c-8785-4d7c-9706-d4142b910720, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us1-sshagan.v2-ray.cf}}
+  - {name: 🇺🇲 US 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: b164d01c-1711-4cf3-8e2c-2bcd1288bbed, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us2-sshagan.v2-ray.cf}}
+  - {name: 🇬🇧 UK 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 7770da32-c47c-431d-a323-284816009c6f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: uk1-sshagan.v2-ray.cf}}
+  - {name: 🇯🇵 JP 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 8a45f5f7-b9bb-409c-eb58-20b3082fdee5, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp1-sshagan.v2-ray.cf}}
+  - {name: 🇯🇵 JP 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: b9febbd3-4721-4ef6-9943-b401d2e2bf68, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /sshstores, ws-headers: {Host: v2rayjp-1.sshstores.vip}}
+  - {name: 🇫🇷 FR 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: f6c2f1a9-0ad2-46e6-e372-534e6a1e539b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: fr1-sshagan.v2-ray.cf}}
+  - {name: 🇳🇱 NL 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: fa5733e7-c332-47c4-eaa3-8c6920fcb043, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: nl1-sshagan.v2-ray.cf}}
+proxy-groups:
+  - name: 👉 Select
+    type: select
+    proxies:
+      - 💪 Best Ping
+      - 🇸🇬 SG 1
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3
+      - 🇺🇲 US 1
+      - 🇺🇲 US 2
+      - 🇬🇧 UK 1
+      - 🇯🇵 JP 1
+      - 🇯🇵 JP 2
+      - 🇫🇷 FR 1
+      - 🇳🇱 NL 1
+  - name: 💪 Best Ping
+    type: url-test
+    proxies:
+      - 🇸🇬 SG 1
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3
+      - 🇺🇲 US 1
+      - 🇺🇲 US 2
+      - 🇬🇧 UK 1
+      - 🇯🇵 JP 1
+      - 🇯🇵 JP 2
+      - 🇫🇷 FR 1
+      - 🇳🇱 NL 1
+    url: http://cp.cloudflare.com
+    interval: 30000
+rules:
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - GEOIP,IR,DIRECT
+  - MATCH,,👉 Select,dns-failed
