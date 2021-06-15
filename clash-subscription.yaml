@@ -9,11 +9,18 @@ proxies:
   - {name: 🇸🇬 SG 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: c9dfd5b4-7479-4662-af64-6e16de84bd2c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg2-sshagan.v2-ray.cf}}
   - {name: 🇸🇬 SG 3, server: www.ruangguru.com, port: 80, type: vmess, uuid: 1c690b5b-5ac6-4448-bc99-c6cd3a3cb7bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: sg-sshkit.v2-ray.cf}}
   - {name: 🇸🇬 SG 4, server: www.ruangguru.com, port: 2052, type: vmess, uuid: fef77654-cdba-11eb-b274-56000361c03d, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: ^.^gandring_bagus_satrio^.^, ws-headers: {Host: rajah.kolocokro.xyz}}
+  - {name: 🇸🇬 SG 5, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: sg01.v2net.top}}
   - {name: 🇺🇲 US 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 63c1466c-8785-4d7c-9706-d4142b910720, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us1-sshagan.v2-ray.cf}}
   - {name: 🇺🇲 US 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: b164d01c-1711-4cf3-8e2c-2bcd1288bbed, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us2-sshagan.v2-ray.cf}}
   - {name: 🇬🇧 UK 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 7770da32-c47c-431d-a323-284816009c6f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: uk1-sshagan.v2-ray.cf}}
   - {name: 🇯🇵 JP 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: 8a45f5f7-b9bb-409c-eb58-20b3082fdee5, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp1-sshagan.v2-ray.cf}}
   - {name: 🇯🇵 JP 2, server: www.ruangguru.com, port: 80, type: vmess, uuid: b9febbd3-4721-4ef6-9943-b401d2e2bf68, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /sshstores, ws-headers: {Host: v2rayjp-1.sshstores.vip}}
+  - {name: 🇯🇵 JP 3, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp02cf.v2cdn.org}}
+  - {name: 🇯🇵 JP 4, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp04.v2net.top}}
+  - {name: 🇯🇵 JP 5, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp06.v2net.top}}
+  - {name: 🇯🇵 JP 6, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp08.v2net.top}}
+  - {name: 🇯🇵 JP 7, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp09.v2net.top}}
+  - {name: 🇯🇵 JP 8, server: www.ruangguru.com, port: 443, type: vmess, uuid: DD9B73D4-47AE-EBEA-FF5C-BD965726F5C1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp10cf.v2cdn.org}}
   - {name: 🇫🇷 FR 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: f6c2f1a9-0ad2-46e6-e372-534e6a1e539b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: fr1-sshagan.v2-ray.cf}}
   - {name: 🇳🇱 NL 1, server: www.ruangguru.com, port: 80, type: vmess, uuid: fa5733e7-c332-47c4-eaa3-8c6920fcb043, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: nl1-sshagan.v2-ray.cf}}
 proxy-groups:
@@ -25,11 +32,18 @@ proxy-groups:
       - 🇸🇬 SG 2
       - 🇸🇬 SG 3
       - 🇸🇬 SG 4
+      - 🇸🇬 SG 5
       - 🇺🇲 US 1
       - 🇺🇲 US 2
       - 🇬🇧 UK 1
       - 🇯🇵 JP 1
       - 🇯🇵 JP 2
+      - 🇯🇵 JP 3
+      - 🇯🇵 JP 4
+      - 🇯🇵 JP 5
+      - 🇯🇵 JP 6
+      - 🇯🇵 JP 7
+      - 🇯🇵 JP 8
       - 🇫🇷 FR 1
       - 🇳🇱 NL 1
   - name: 💪 Best Ping
@@ -39,11 +53,18 @@ proxy-groups:
       - 🇸🇬 SG 2
       - 🇸🇬 SG 3
       - 🇸🇬 SG 4
+      - 🇸🇬 SG 5
       - 🇺🇲 US 1
       - 🇺🇲 US 2
       - 🇬🇧 UK 1
       - 🇯🇵 JP 1
       - 🇯🇵 JP 2
+      - 🇯🇵 JP 3
+      - 🇯🇵 JP 4
+      - 🇯🇵 JP 5
+      - 🇯🇵 JP 6
+      - 🇯🇵 JP 7
+      - 🇯🇵 JP 8
       - 🇫🇷 FR 1
       - 🇳🇱 NL 1
     url: http://cp.cloudflare.com
