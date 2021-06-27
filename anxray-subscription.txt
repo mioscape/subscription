@@ -1,5 +1,4 @@
 vless://905b569e-2ad4-4998-8e1c-c6fe5e2bf3ee@www.ruangguru.com:80/?type=ws&encryption=none&host=vless.mioscape.cf&path=%2Fmioscape#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20vless.mioscape.cf
-vless://905b569e-2ad4-4998-8e1c-c6fe5e2bf3ee@www.ruangguru.com:80/?type=ws&encryption=none&host=sg-linode.mioscape.cf&path=%2Fmioscape#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20sg-linode.mioscape.cf
-vless://905b569e-2ad4-4998-8e1c-c6fe5e2bf3ee@www.ruangguru.com:80/?type=ws&encryption=none&host=moemoekyunkyun.mioscape.cf&path=%2Fmioscape#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20moemoekyunkyun.mioscape.cf
-vless://905b569e-2ad4-4998-8e1c-c6fe5e2bf3ee@www.ruangguru.com:80/?type=ws&encryption=none&host=mionatsume-cantikbanget.mioscape.cf&path=%2Fmioscape#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20mionatsume-cantikbanget.mioscape.cf
+vless://26429efb-f345-4b31-f62c-8f429c54ee0e@www.ruangguru.com:8880/?type=ws&encryption=none&host=mionatsume-cantikbanget.mioscape.cf&path=%2Fmioscape#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20mionatsume-cantikbanget.mioscape.cf%3A8880
+vmess://eyJhZGQiOiJ3d3cucnVhbmdndXJ1LmNvbSIsInBzIjoi8J-Hr_Cfh7UgfCBqcGwtMS5oZXJiYWx2MnJheS5tZSIsInNjeSI6ImF1dG8iLCJ0eXBlIjoiIiwic25pIjoiIiwicGF0aCI6Ii9oZXJiYWxzZXJ2ZXIiLCJwb3J0Ijo4MCwidiI6MiwiaG9zdCI6ImpwbC0xLmhlcmJhbHYycmF5Lm1lIiwidGxzIjoiIiwiaWQiOiJlZGQ4OGZhZS0wZThlLTQ1YWQtOGYxMi0xN2UyOTM3MTQ4NzMiLCJuZXQiOiJ3cyIsImFpZCI6Mn0
 trojan-go://67886060-d50b-11eb-bbb2-1239d0255272@www.ruangguru.com:443/?sni=trojan3.bonds.id&type=ws&host=trojan3.bonds.id&path=%2Fhowdy&encryption=none#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20trojan3.bonds.id
