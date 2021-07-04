@@ -1,1 +1,0 @@
-trojan-go://M10scape@www.ruangguru.com:443/?sni=trojan-go.mioscape.cf&type=ws&host=trojan-go.mioscape.cf&path=%2Fmioscape&encryption=none#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20trojan-go.mioscape.cf
