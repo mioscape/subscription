@@ -1,4 +1,4 @@
-# Free WebSocket Based VPN Subscription
+# Free WebSocket Based VPN Subscription (Unmaintained)
 
 - AnXray & SagerNet Subscription: https://subscription.mioscape.my.id/
 
