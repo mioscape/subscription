@@ -1,6 +1,6 @@
 # Free WebSocket Based VPN Subscription (Unmaintained)
 
-- AnXray & SagerNet Subscription: https://subscription.mioscape.my.id/
+- AnXray & SagerNet Subscription: https://subscription.ihya.dev/
 
 ### How to use the Subscription:
 
